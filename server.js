@@ -40,7 +40,7 @@ server.get('/weather', (request, response) => {
     const searchQuery = request.query.cityname;
     // const searchQueryy = request.query.searchQuery;
     const weatherArray = weatherData.find((item) => {
-        if ((longitude == item.lon && latitude == item.lat) || (searchQuery ==item.city_name.toLowerCase)) {
+        if ((longitude == item.lon && latitude == item.lat) || (searchQuery.toLowerCase() == item.city_name)) {
             return item
         }
 
