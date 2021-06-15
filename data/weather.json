@@ -134,7 +134,7 @@
                 "clouds_low": 89
             }
         ],
-        "city_name": "Seattle",
+        "city_name": "seattle",
         "lon": -122.33207,
         "timezone": "America/Los_Angeles",
         "lat": 47.60621,
@@ -276,10 +276,10 @@
                 "clouds_low": 20
             }
         ],
-        "city_name": "Paris",
-        "lon": 2.35,
+        "city_name": "paris",
+        "lon": 2.3514616,
         "timezone": "Europe/Paris",
-        "lat": 48.86,
+        "lat": 48.8566969,
         "country_code": "FR",
         "state_code": "11"
     },
@@ -418,10 +418,10 @@
                 "clouds_low": 0
             }
         ],
-        "city_name": "Amman",
-        "lon": 35.91,
+        "city_name": "amman",
+        "lon": 35.9239625,
         "timezone": "Asia/Amman",
-        "lat": 31.95,
+        "lat": 31.9515694,
         "country_code": "JO",
         "state_code": "16"
     }
