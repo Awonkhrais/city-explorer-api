@@ -10,7 +10,7 @@ const server = express();
 server.use(cors()); //  make my server opened for anyone
 
 
-const PORT = process.env.PORT ||3030;
+const PORT = process.env.PORT || 3030;
 
 server.listen(PORT, () => {
     console.log(`Listening on PORT ${PORT}`);
@@ -40,7 +40,7 @@ server.get('/weather', (request, response) => {
     const searchQuery = request.query.cityname;
     // const searchQueryy = request.query.searchQuery;
     const weatherArray = weatherData.find((item) => {
-        if ((longitude == item.lon && latitude == item.lat) || (searchQuery ==item.city_name)) {
+        if ((longitude == item.lon && latitude == item.lat) || (searchQuery ==item.city_name.toLowerCase)) {
             return item
         }
 
