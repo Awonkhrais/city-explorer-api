@@ -63,8 +63,12 @@ server.get('/weather', (request, response) => {
     }
 
     catch {
-        response.status(404).send('OPS!! Your City Not Found');
+        response.status(500).send('OPS!! Your City Not Found');
     }
 
 })
 
+
+server.get('*',(req,res) =>{
+    res.status(500).send('sorry, this page not found');
+  });
